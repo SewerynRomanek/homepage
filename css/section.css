@@ -1,0 +1,17 @@
+.section {
+    background-color: #ffffff;
+    margin-right: 10%;
+    margin-left: 10%;
+    box-shadow: 2px 30px 30px #ccc;
+    margin-bottom: 5%;
+}
+
+.section--first {
+    margin-top: -42px;
+}
+
+.section__header {
+    text-align: center;
+    font-size: 45px;
+    padding: 20px;
+}

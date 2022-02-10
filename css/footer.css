@@ -1,0 +1,11 @@
+.footer {
+    background-color: black;
+    padding: 2%;
+}
+
+.footer__paragraph {
+    font-family: 'Bebas Neue', cursive;
+    color: wheat;
+    font-size: 30px;
+    text-align: center;
+}

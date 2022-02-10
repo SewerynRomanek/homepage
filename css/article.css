@@ -1,0 +1,44 @@
+.article {
+    background-color: white;
+    margin-left: 30px;
+    padding-bottom: 5%;
+    margin-right: 2%;
+}
+
+.article__header {
+    margin-left: 25px;
+    max-width: 95%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    border-top: 1px solid black;
+}
+
+.article__list {
+    list-style: none;
+}
+
+.article__name {
+    font-size: 111%
+}
+
+.article__paragraph {
+    text-align: center;
+    font-size: 111%;
+}
+
+.article__photo {
+    max-width: 90%;
+    min-width: 90%;
+    margin-left: 20px;
+
+}
+
+.article__order {
+    list-style: upper-roman;
+    max-width: 1000px
+}
+
+.article__unorder {
+    list-style-type: square;
+    max-width: 1000px
+}

@@ -1,0 +1,10 @@
+.header {
+    font-family: 'Bebas Neue', cursive;
+    background-color: #cccc;
+    padding: 20px;
+}
+
+.header__heading {
+    text-align: center;
+    font-size: 60px;
+}

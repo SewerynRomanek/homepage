@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="image/open.png">
+    <link rel="icon" href="image/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/list.css">
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Moje zainteresowania </title>
+
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__heading">Moje zainteresowania</h1>
+    </header>
+    <nav class="navigation">
+        <button class="navigation__button js-navigation__buttonCar">Motoryzacja</button>
+        <button class="navigation__button js-navigation__buttonGame">Gry Komputerowe</button>
+        <button class="navigation__button js-navigation__buttonDrink">Drinki</button>
+        <button class="navigation__button js-navigation__buttonOption">Ustawienia</button>
+    </nav>
+    <nav class="navigation js-navigation_option navigation--hide">
+        <button class="navigation__button js-navigation__buttonBackground"><span
+                class="navigation__background js-navigation_background">Szare
+                tło</span></button>
+    </nav>
+    <nav class="navigation  navigation--margin">
+        <ul class="navigation__list  navigation__list--hide js-navigation__listCars">
+            <li class="navigation__element">
+                <a class="navigation__link" href="#dream__cars">Samochody marzeń</a>
+            </li>
+            <li class="navigation__element">
+                <a class="navigation__link " href="#car__table">Dane Techniczne</a>
+            </li>
+            <li class="navigation__element">
+                <a class="navigation__link" href="#youtubers"> Twórcy motoryzacyjni których lubie ogladać</a>
+            </li>
+        </ul>
+        <ul class="navigation__list navigation__list--hide js-navigation__listGames">
+            <li class="navigation__element">
+                <a class="navigation__link" href="#my__games"> Moje Ulubione gry</a>
+            </li>
+            <li class="navigation__element">
+                <a class="navigation__link" href="#streamers">Streamerzy których ogladam</a>
+            </li>
+        </ul>
+        <ul class="navigation__list navigation__list--hide js-navigation__listDrinks">
+            <li class="navigation__element"><a class="navigation__link" href="#tequila">Tequila Sunrise</a></li>
+            <li class="navigation__element"><a class="navigation__link" href="#cuba">Cuba Libre</a></li>
+            <li class="navigation__element"><a class="navigation__link" href="#tea">long Island Iced Tea</a></li>
+        </ul>
+    </nav>
+    <main class="main main--background">
+        <section class="section section--first">
+            <h2 class="section__header">Motoryzacja</h2>
+            <article class="article">
+                <h3 class="article__header" id="dream__cars">Samochody moich marzeń</h3>
+                <ul class="article__list">
+                    <li>
+                        <p class="article__pargraph">BMW M3 E46</p>
+                        <img class="article__photo"
+                            src="https://c4.wallpaperflare.com/wallpaper/643/93/281/bmw-lowrider-car-e46-wallpaper-preview.jpg"
+                            alt="BMW M3 E46">
+                    </li>
+                    <li>
+                        <p class="article__pargraph">Porsche 911 VII</p>
+                        <img class="article__photo" src="https://images5.alphacoders.com/853/thumb-1920-853516.jpg"
+                            alt="Porsche 911 VII">
+                    </li>
+                    <li>
+                        <p class="article__pargraph">Lamborghini Huracan Performant</p>
+                        <img class="article__photo"
+                            src="https://i.wpimg.pl/985x0/m.autokult.pl/lamborghini-huracan-perf-5c5da59.jpg"
+                            alt="Lamborghini Huracan Performante">
+                    </li>
+                    <li>
+                        <p class="article__pargraph">Mercedes-Benz G63 AMG</p>
+                        <img class="article__photo"
+                            src="https://s1.1zoom.me/b4245/444/G-Class_Mercedes-Benz_AMG_G63_W463_Black_563143_1366x768.jpg"
+                            alt="Mercedes-Benz G63 AMG">
+                    </li>
+                </ul>
+            </article>
+            <article class="article">
+                <h2 class="article__header">Dane techniczne</h2>
+                <table id="car__table" class="table">
+                    <tr>
+                        <th class="table__cell table__cell--header" scope="col">Model</th>
+                        <th class="table__cell table__cell--header" scope="col">BMW M3 E46</th>
+                        <th class="table__cell table__cell--header" scope="col">Porsche 911 VII</th>
+                        <th class="table__cell table__cell--header" scope="col">Lamborghini Huracan Performant</th>
+                        <th class="table__cell table__cell--header" scope="col">Mercedes-Benz G63 AMG</th>
+                    </tr>
+                    <tr>
+                        <th class="table__cell table__cell--header" scope="row">Okres produkcji</th>
+                        <td class="table__cell table__cell--gray">1997-2007</td>
+                        <td class="table__cell "> od 2018</td>
+                        <td class="table__cell table__cell--gray">od 2017</td>
+                        <td class="table__cell "> od 2007</td>
+                    </tr>
+                    <tr>
+                        <th class="table__cell table__cell--header" scope="row">Pojemność silnika</th>
+                        <td class="table__cell table__cell--gray">3246 cm³</td>
+                        <td class="table__cell ">2981 cm³</td>
+                        <td class="table__cell table__cell--gray"> 5204 cm³</td>
+                        <td class="table__cell ">5461 cm³</td>
+                    </tr>
+                    <tr>
+                        <th class="table__cell table__cell--header" scope="row">Ilosc koni</th>
+                        <td class="table__cell table__cell--gray">343 km</td>
+                        <td class="table__cell ">385 km</td>
+                        <td class="table__cell table__cell--gray">640 km</td>
+                        <td class="table__cell ">544 km</td>
+                    </tr>
+                    <tr>
+                        <th class="table__cell table__cell--header" scope="row">czas do 100 km/h</th>
+                        <td class="table__cell table__cell--gray">5,2s</td>
+                        <td class="table__cell ">4,2s</td>
+                        <td class="table__cell table__cell--gray">2,9s</td>
+                        <td class="table__cell ">5,4s</td>
+                    </tr>
+                </table>
+            </article>
+            <article class="article">
+                <h3 class="article__header" id="youtubers">Twórcy motoryzacyjni których lubie oglądać</h3>
+                <ul class=" list">
+                    <li class="list__element">
+                        <p class="list__paragraph">Budda. TV</p>
+                        <img class="list__photo" src="https://ecsmedia.pl/c/rozdaje-karty-b-iext69169039.jpg"
+                            alt="BuddaTV">
+                        <div class="list__link">
+                            <a href="https://www.youtube.com/c/BuddaTV"><img class="list__social"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/2048px-YouTube_social_white_square_%282017%29.svg.png"
+                                    alt="Youtube"></a>
+                            <a href="https://www.instagram.com/budda.7/?hl=pl"><img class="list__social"
+                                    src="https://pbs.twimg.com/profile_images/730396161757069313/0m3HwE7t_400x400.jpg"
+                                    alt="Instagram"></a>
+                        </div>
+                    </li>
+                    <li class="list__element">
+                        <p class="list__paragraph">KicksterTV</p>
+                        <img class="list__photo"
+                            src="https://deskateka.files.wordpress.com/2018/05/kickster-1.jpg?w=1200" alt="KIckterTV">
+                        <div class="list__link">
+                            <a href="https://www.youtube.com/c/KicksterTV"><img class="list__social"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/2048px-YouTube_social_white_square_%282017%29.svg.png"
+                                    alt="Youtube"></a>
+                            <a href="https://www.instagram.com/___kickster___/"><img class="list__social"
+                                    src="https://pbs.twimg.com/profile_images/730396161757069313/0m3HwE7t_400x400.jpg"
+                                    alt="Instagram"></a>
+                        </div>
+                    </li>
+                    <li class="list__element">
+                        <p class="list__paragraph">Patryk Mikiciuk</p>
+                        <img class="list__photo"
+                            src="https://static.wirtualnemedia.pl/media/top/KlasykiPatrykaMikiciuka-655.jpg"
+                            alt="Patryk Mikiciuk">
+                        <div class="list__link">
+                            <a href="https://www.youtube.com/c/PatrykMikiciuk911"> <img class="list__social"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/2048px-YouTube_social_white_square_%282017%29.svg.png"
+                                    alt="Youtube"></a>
+                            <a href="https://www.instagram.com/patrykmikiciuk/?hl=pl"><img class="list__social"
+                                    src="https://pbs.twimg.com/profile_images/730396161757069313/0m3HwE7t_400x400.jpg"
+                                    alt="Instagram"></a>
+                        </div>
+                    </li>
+                    <li class="list__element">
+                        <p class="list__paragraph">Zdarova</p>
+                        <img class="list__photo" src="https://i.ytimg.com/vi/UFag0QmO30s/maxresdefault.jpg"
+                            alt="Zdarova">
+                        <div class="list__link">
+                            <a href="https://www.youtube.com/channel/UCvMMLJGjcvx8aWs1ItCUAAA"><img class="list__social"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/2048px-YouTube_social_white_square_%282017%29.svg.png"
+                                    alt="Youtube"></a>
+                            <a href="https://www.instagram.com/fundacja_wyjeb4ne_serce/"><img class="list__social"
+                                    src="https://pbs.twimg.com/profile_images/730396161757069313/0m3HwE7t_400x400.jpg"
+                                    alt="Instagram"></a>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="section">
+            <h2 class="section__header">Gry komputerowe</h2>
+            <article class="article">
+                <h3 class="article__header">Ulubione Gry</h3>
+                <table id="my__games" class="table">
+                    <caption class="table__cation">Moje ulubione gry</caption>
+                    <tr>
+                        <th class="table__cell table__cell--header" scope="col">Twórca</th>
+                        <th class="table__cell table__cell--header" scope="col">Tytuł</th>
+                        <th class="table__cell table__cell--header" scope="col">Rodzaj</th>
+                        <th class="table__cell table__cell--header" scope="col">Multiplayer</th>
+                    </tr>
+                    <tr>
+                        <td class="table__cell ">Valve Corporation</td>
+                        <td class="table__cell ">Counter-Strike: Global Offensive (CS:GO) </td>
+                        <td class="table__cell ">FPS</td>
+                        <td class="table__cell ">✔</td>
+                    </tr>
+                    <tr>
+                        <td class="table__cell table__cell--gray">Activision</td>
+                        <td class="table__cell table__cell--gray">Call of Duty: Warzone</td>
+                        <td class="table__cell table__cell--gray">Battle royale</td>
+                        <td class="table__cell table__cell--gray">✔</td>
+                    </tr>
+                    <tr>
+                        <td class="table__cell ">Microsoft Studios</td>
+                        <td class="table__cell ">Forza Horizon 4 </td>
+                        <td class="table__cell ">Wyścigowa</td>
+                        <td class="table__cell ">✔</td>
+                    </tr>
+                    <tr>
+                        <td class="table__cell table__cell--gray">Nintendo</td>
+                        <td class="table__cell table__cell--gray">Animal Crossing: New Horizons</td>
+                        <td class="table__cell table__cell--gray">Symulator życia</td>
+                        <td class="table__cell table__cell--gray">✔</td>
+                    </tr>
+                    <tr>
+                        <td class="table__cell " rowspan="2">CD Projekt Red</td>
+                        <td class="table__cell ">Wiedźmin 3: Dziki Gon</td>
+                        <td class="table__cell " rowspan="2"> fabularna gra akcji</td>
+                        <td class="table__cell ">❌</td>
+                    </tr>
+                    <tr>
+                        <td class="table__cell ">Cyberpunk 2077</td>
+                        <td class="table__cell ">❌</td>
+                    </tr>
+                </table>
+            </article>
+            <article class="article">
+                <h3 class="article__header" id="streamers">Streamerzy których ogladam</h3>
+                <ul class="list">
+                    <li class="list__element">
+                        <p class="list__paragraph">Izak</p>
+                        <img class="list__photo"
+                            src="https://i0.wp.com/izaktv.pl/wp-content/uploads/2015/12/10661706_280701758796012_2822340536391078270_o.jpg?resize=585%2C390&ssl=1"
+                            alt="IzakTV">
+                        <div class="list__link">
+                            <a href="https://www.youtube.com/c/izakLIVE/featured"><img class="list__social"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/2048px-YouTube_social_white_square_%282017%29.svg.png"
+                                    alt="Youtube"></a>
+                            <a href="https://www.twitch.tv/izakooo"><img class=" list__social"
+                                    src="https://www.pngitem.com/pimgs/m/116-1167117_twitch-logo-png-transparent-background-transparent-background-twitch.png"
+                                    alt="Twitch"></a>
+                            <a href="https://www.instagram.com/izaklive/"><img class=" list__social"
+                                    src="https://pbs.twimg.com/profile_images/730396161757069313/0m3HwE7t_400x400.jpg"
+                                    alt="Instagram"></a>
+                        </div>
+                    </li>
+                    <li class="list__element">
+                        <p class="list__paragraph">Pago</p>
+                        <img class="list__photo" src="https://cdn.boop.pl/uploads/2020/03/csgo-743x387.jpg" alt="Pago">
+                        <div class="list__link">
+                            <a href="https://www.youtube.com/c/Pago33"><img class="list__social"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/2048px-YouTube_social_white_square_%282017%29.svg.png"
+                                    alt="Youtube"></a>
+                            <a href="https://www.twitch.tv/PAGO3"><img class=" list__social"
+                                    src="https://www.pngitem.com/pimgs/m/116-1167117_twitch-logo-png-transparent-background-transparent-background-twitch.png"
+                                    alt="Twitch"></a>
+                            <a href="https://www.instagram.com/donpago/"><img class=" list__social"
+                                    src="https://pbs.twimg.com/profile_images/730396161757069313/0m3HwE7t_400x400.jpg"
+                                    alt="Instagram"></a>
+                        </div>
+                    </li>
+                    <li class="list__element">
+                        <p class="list__paragraph">Leh.tv</p>
+                        <img class="list__photo" src="https://i.ytimg.com/vi/X4oK_hPMrs8/maxresdefault.jpg" alt="Leh">
+                        <div class="list__link">
+                            <a href="https://www.youtube.com/c/Leh_TV"> <img class=" list__social"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/2048px-YouTube_social_white_square_%282017%29.svg.png"
+                                    alt="Youtube"></a>
+                            <a href="https://www.facebook.com/Lehuuu"><img class=" list__social"
+                                    src="https://www.pngitem.com/pimgs/m/116-1167117_twitch-logo-png-transparent-background-transparent-background-twitch.png"
+                                    alt="Twitch"></a>
+                            <a href="https://www.instagram.com/lehtv/"><img class=" list__social"
+                                    src="https://pbs.twimg.com/profile_images/730396161757069313/0m3HwE7t_400x400.jpg"
+                                    alt="Instagram"></a>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="section">
+            <h2 class="section__header">Drinki</h2>
+            <article class="article">
+                <h3 class="article__header" id="tequila">Tequila Sunrise</h3>
+                <img class="article__photo"
+                    src="https://www.thespruceeats.com/thmb/Skwa75sBz6_kRy_0Wd30JLdAMhk=/940x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/tequila-sunrise-margarita-recipe-760875-hero-images-4-c96a1081c15d4d108937520388441823.jpg"
+                    alt="Tequila Sunruse">
+                <p class="article__pargraph">Składniki:</p>
+                <ul class="article__unorder">
+                    <li>tequila - 60 ml</li>
+                    <li>sok pomarańczowy - 120 ml</li>
+                    <li>grenadyna - 20 ml</li>
+                    <li>kostki lodu</li>
+                </ul>
+                <p class="article__pargraph">Przygotowanie:</p>
+                <ol class="aricle__order">
+                    <li>Tequilę i sok pomarańczowy wlej do szklanki wypełnionej kostkami lodu, dobrze
+                        wymieszaj.
+                    </li>
+                    <li>Następnie wlej delikatnie grenadyna, aby osiadła na dno.</li>
+                    <li>Całość możesz ozdobić kawałkiem pomarańczy.</li>
+                </ol>
+            </article>
+            <article class="article">
+                <h3 class="article__header" id="cuba">Cuba Libre </h3>
+                <img class="article__photo" src="https://mojedrinki.pl/wp-content/uploads/2021/02/cuba-libre.jpg"
+                    alt="Cuba Libre">
+                <p class="article__pargraph">Składniki:</p>
+                <ul class="article__unorder">
+                    <li>rum - 50 ml</li>
+                    <li>Coca-Cola - 120 ml</li>
+                    <li>sok z limonki - 10 ml</li>
+                    <li>kostki lodu</li>
+                </ul>
+                <p class="article__pargraph">Przygotowanie:</p>
+                <ol class="article__order">
+                    <li> Do szklanki wypełnionej kostkami lodu wlewamy wszystkie składniki i mieszamy. Sok z
+                        limonki możemy wycisnąć mudlerem podobnie jak w Mohito.</li>
+                    <li>Do szklanki możemy również wrzucić ćwiartkę limonki do ozdoby.</li>
+                </ol>
+            </article>
+            <article class="article">
+                <h3 class="article__header" id="tea">Long Island Iced Tea</h3>
+                <img class="article__photo"
+                    src="https://www.long-island-iced-tea.com/images/16x9/long-island-iced-tea-16x9.jpg"
+                    alt="Long Island Iced Tea">
+                <p class="article__pargraph">Składniki:</p>
+                <ul class="article__unorder">
+                    <li>wódka - 25 ml</li>
+                    <li>gin - 25 ml</li>
+                    <li>tequila - 25 ml</li>
+                    <li>biały rum - 25 ml</li>
+                    <li>syrop cukrowy - 35 ml</li>
+                    <li>likier Cointreau - 25 ml</li>
+                    <li>sok z limonki lub cytryny - 35 ml</li>
+                    <li>Coca-Cola - 20 ml</li>
+                    <li>kostki lodu</li>
+                </ul>
+                <p class="article__pargraph">Przygotowanie:</p>
+                <ol class="article__order">
+                    <li>Do shakera wrzucamy znaczną ilość kostek lodu.</li>
+                    <li>Wlewamy wszystkie składniki do shakera oprócz coli.</li>
+                    <li>Przelewamy zawartość shakera do szklanki.Dobrze mieszamy przed wypiciem.</li>
+                </ol>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__paragraph">Seweryn_Romanek®</p>
+    </footer>
+</body>
+
+</html>

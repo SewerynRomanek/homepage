@@ -1,0 +1,19 @@
+.table {
+    border-collapse: collapse;
+    max-width: 100%;
+    margin-bottom: 5%;
+    margin-left: 5%
+}
+.table__cell {
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    font-size: 70%;
+}
+.table__cell--header {
+    background-color: slategray;
+}
+.table__cell--gray {
+    background-color: rgba(223, 219, 219, 0.829);
+}
