@@ -1,32 +1,42 @@
-console.log("Hello World!");
-let carLinks = document.querySelector(".js-navigation__listCars");
-let carButton = document.querySelector(".js-navigation__buttonCar");
-carButton.addEventListener("click", () => {
-    carLinks.classList.toggle("navigation__list--hide") 
-});
-let gameLinks = document.querySelector(".js-navigation__listGames");
-let gameButton = document.querySelector(".js-navigation__buttonGame");
-gameButton.addEventListener("click", () => {
-    gameLinks.classList.toggle("navigation__list--hide")
-})
-let drinkLinks = document.querySelector(".js-navigation__listDrinks");;
-let drinkButton = document.querySelector(".js-navigation__buttonDrink");
-drinkButton.addEventListener("click", () => {
-    drinkLinks.classList.toggle("navigation__list--hide");
-});
-let optionButton = document.querySelector(".js-navigation__buttonOption");
-let option = document.querySelector(".js-navigation_option")
-optionButton.addEventListener("click", () => {
-    option.classList.toggle("navigation--hide")     
-});
-let main = document.querySelector(".main")
-let backgroundButton = document.querySelector(".js-navigation__buttonBackground")  
-let backgroundText = document.querySelector(".js-navigation_background")
-backgroundButton.addEventListener("click", () => {
-    main.classList.toggle("main--background");
-    if (main.classList.contains("main--background")) {
-        backgroundText.innerText = "Szare tło";
-    } else {
-        backgroundText.innerText = "Białe tło ";
-    }
-})
+{
+    const welcome = () => {
+        console.log("Hello World!")
+    };
+    welcome()
+    const onCarClick = () => {
+        const carLinks = document.querySelector(".js-navigation__listCars");
+        carLinks.classList.toggle("navigation__list--hide");
+    };
+    const carButton = document.querySelector(".js-navigation__buttonCar");
+    carButton.addEventListener("click", onCarClick);
+    const onGameClick = () => {
+        const gameLinks = document.querySelector(".js-navigation__listGames");
+        gameLinks.classList.toggle("navigation__list--hide");
+    };
+    const gameButton = document.querySelector(".js-navigation__buttonGame");
+    gameButton.addEventListener("click", onGameClick);
+    const onDrinkClick = () => {
+        const drinkLinks = document.querySelector(".js-navigation__listDrinks");
+        drinkLinks.classList.toggle("navigation__list--hide");
+    };
+    const drinkButton = document.querySelector(".js-navigation__buttonDrink");
+    drinkButton.addEventListener("click", onDrinkClick);
+    const onOptionClick = () => {
+        const option = document.querySelector(".js-navigation_option")
+        option.classList.toggle("navigation--hide")
+    };
+    const optionButton = document.querySelector(".js-navigation__buttonOption");
+    optionButton.addEventListener("click", onOptionClick);
+    const onBacgroundClick = () => {
+        const main = document.querySelector(".main");
+        const backgroundText = document.querySelector(".js-navigation_background");
+        main.classList.toggle("main--background");
+        if (main.classList.contains("main--background")) {
+            backgroundText.innerText = "Szare tło";
+        } else {
+            backgroundText.innerText = "Białe tło ";
+        }
+    };
+    const backgroundButton = document.querySelector(".js-navigation__buttonBackground");
+    backgroundButton.addEventListener("click", onBacgroundClick);
+}
