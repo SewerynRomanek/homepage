@@ -5,11 +5,9 @@
     welcome()
     const onBacgroundClick = () => {
         const body = document.querySelector(".js-body");
-        const section = document.querySelector(".js-section");
-        const border = document.querySelector(".js-article__header");
+        const section = document.querySelector(".js-section"); 
         const backgroundText = document.querySelector(".js-navigation_background");
         body.classList.toggle("body--background");
-        border.classList.toggle("article__header--border");
         section.classList.toggle("section--background");
         if (body.classList.contains("body--background")) {
             backgroundText.innerText = "Ciemny Motyw";
