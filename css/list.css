@@ -4,6 +4,7 @@
 
 .list__element {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 5%;
@@ -19,28 +20,45 @@
 }
 
 .list__photo {
-    width: 800px;
-    height: 800px;
+    width: 500px;
+    height: 500px;
     max-height: 80%;
     max-width: 90%;
     object-fit: cover;
     border: 4px solid rgb(11, 12, 10);
     border-radius: 50%;
     align-self: center;
-    flex-basis: 50%;
+   
 }
 
 .list__link {
-    text-align: center;
+   display: flex;
+   justify-content: space-evenly;
+  
 }
 
 .list__social {
-    max-width: 15%;
+    max-width: 200px;
+}
+.list__image {
+    max-width: 200px;
+    margin: 0%;
 
 }
 
-.list__social:hover {
+.list__image:hover {
     border: 1px solid black;
     border-radius: 50%;
-    padding: 10px;
+    padding: 20px;
+}
+
+@media (max-width:767px) {
+ .list__photo {
+     width:200px;
+     height: 200px;
+ }
+ .list__image {
+    max-width: 50px;
+    margin: 0%;
+ }
 }

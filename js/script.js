@@ -3,38 +3,18 @@
         console.log("Hello World!")
     };
     welcome()
-    const onCarClick = () => {
-        const carLinks = document.querySelector(".js-navigation__listCars");
-        carLinks.classList.toggle("navigation__list--hide");
-    };
-    const carButton = document.querySelector(".js-navigation__buttonCar");
-    carButton.addEventListener("click", onCarClick);
-    const onGameClick = () => {
-        const gameLinks = document.querySelector(".js-navigation__listGames");
-        gameLinks.classList.toggle("navigation__list--hide");
-    };
-    const gameButton = document.querySelector(".js-navigation__buttonGame");
-    gameButton.addEventListener("click", onGameClick);
-    const onDrinkClick = () => {
-        const drinkLinks = document.querySelector(".js-navigation__listDrinks");
-        drinkLinks.classList.toggle("navigation__list--hide");
-    };
-    const drinkButton = document.querySelector(".js-navigation__buttonDrink");
-    drinkButton.addEventListener("click", onDrinkClick);
-    const onOptionClick = () => {
-        const option = document.querySelector(".js-navigation_option")
-        option.classList.toggle("navigation--hide")
-    };
-    const optionButton = document.querySelector(".js-navigation__buttonOption");
-    optionButton.addEventListener("click", onOptionClick);
     const onBacgroundClick = () => {
-        const main = document.querySelector(".main");
+        const body = document.querySelector(".js-body");
+        const section = document.querySelector(".js-section");
+        const border = document.querySelector(".js-article__header");
         const backgroundText = document.querySelector(".js-navigation_background");
-        main.classList.toggle("main--background");
-        if (main.classList.contains("main--background")) {
-            backgroundText.innerText = "Szare tło";
+        body.classList.toggle("body--background");
+        border.classList.toggle("article__header--border");
+        section.classList.toggle("section--background");
+        if (body.classList.contains("body--background")) {
+            backgroundText.innerText = "Ciemny Motyw";
         } else {
-            backgroundText.innerText = "Białe tło ";
+            backgroundText.innerText = "Biały Motyw";
         }
     };
     const backgroundButton = document.querySelector(".js-navigation__buttonBackground");

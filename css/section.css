@@ -1,17 +1,19 @@
 .section {
-    background-color: #ffffff;
     margin-right: 10%;
     margin-left: 10%;
-    box-shadow: 2px 30px 30px #ccc;
+    box-shadow: 2px 2px 30px rgb(65, 64, 64);
     margin-bottom: 5%;
 }
 
 .section--first {
-    margin-top: -42px;
+    margin-top: 20px;
 }
 
 .section__header {
     text-align: center;
     font-size: 45px;
     padding: 20px;
+}
+.section--background { 
+    box-shadow: 2px 2px 30px rgb(235, 235, 235);
 }

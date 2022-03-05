@@ -5,6 +5,7 @@
 }
 
 .header__heading {
+    color: black;
     text-align: center;
     font-size: 60px;
 }
